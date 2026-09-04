@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin==1.10.2"]
+build-backend = "maturin"
+
+[project]
+name = "rustwalk"
+version = "1.4.7"
+author = [{ name = "isaac", email = "mkalafsaz@gmail.com" }]
+description = "Fast filesystem traversal using Rust's jwalk"
+requires-python = ">=3.12"
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
