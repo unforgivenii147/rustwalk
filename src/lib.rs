@@ -230,7 +230,7 @@ fn walk_parallel(
 }
 
 #[pymodule]
-fn fastwalk(_py: Python, m: &PyModule) -> PyResult<()> {
+fn rustwalk(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(walk, m)?)?;
     m.add_function(wrap_pyfunction!(walk_files, m)?)?;
     m.add_function(wrap_pyfunction!(walk_dirs, m)?)?;

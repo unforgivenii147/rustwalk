@@ -12,7 +12,7 @@ pyo3 = { version = "0.20.0", features = ["extension-module"] }
 walkdir = "2"
 
 [profile.release]
+opt-level = 3
 lto = true
 codegen-units = 1
-opt-level = 3
 
